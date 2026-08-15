@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: 'Bestes VPN für IPTV in Deutschland 2026 | GermanyStreamTV.com',
     description:
       'Warum ein VPN beim IPTV-Streaming sinnvoll ist, wie es Privatsphäre schützt und Drosselung verhindert – plus Auswahlkriterien.',
-    url: 'https://ipgermany.de/iptv-vpn',
+    url: 'https://germanystreamtv.com/iptv-vpn',
   },
 };
 

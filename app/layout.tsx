@@ -31,7 +31,7 @@ const DEFAULT_DESCRIPTION =
   'Streamen Sie über 50.000 Live-TV-Sender, 1.800+ Sportkanäle und 180.000+ Filme & Serien in echtem 4K mit HDR10+ ohne Ruckeln. Einfache Einrichtung auf Firestick, Smart-TVs, Apple TV und mehr.';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ipgermany.de'),
+  metadataBase: new URL('https://germanystreamtv.com'),
   // Each page provides its own full title (already brand-suffixed); no template
   // to avoid a doubled "| GermanyStreamTV.com".
   title: DEFAULT_TITLE,
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'de_DE',
-    url: 'https://ipgermany.de',
+    url: 'https://germanystreamtv.com',
     siteName: SITE_NAME,
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,

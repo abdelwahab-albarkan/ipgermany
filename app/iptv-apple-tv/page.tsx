@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'IPTV auf Apple TV installieren 2026 (tvOS) | GermanyStreamTV.com',
     description:
       'Apple TV IPTV einrichten mit IPTV Smarters, GSE Smart IPTV & iPlayTV – direkt aus dem App Store, ohne Jailbreak. 50.000+ Sender in 4K.',
-    url: 'https://ipgermany.de/iptv-apple-tv',
+    url: 'https://germanystreamtv.com/iptv-apple-tv',
   },
 };
 

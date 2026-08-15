@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'Champions League live streamen 2026 über IPTV | GermanyStreamTV.com',
     description:
       'Die UEFA Champions League live über IPTV streamen – in UHD & 60 FPS, mit stabilen Servern. Voraussetzungen & beste Einstellungen.',
-    url: 'https://ipgermany.de/champions-league-live-stream',
+    url: 'https://germanystreamtv.com/champions-league-live-stream',
   },
 };
 

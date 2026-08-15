@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'IPTV auf Samsung Smart TV installieren 2026 | GermanyStreamTV.com',
     description:
       'Samsung Smart TV IPTV einrichten mit Smart IPTV, IBO Player & IPTV Smarters Pro – direkt am Fernseher, ohne PC. 50.000+ Sender in 4K.',
-    url: 'https://ipgermany.de/iptv-samsung-tv',
+    url: 'https://germanystreamtv.com/iptv-samsung-tv',
   },
 };
 

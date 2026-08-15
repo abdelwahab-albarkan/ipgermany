@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: 'IPTV Erfahrungen 2026: Bewertungen & Kundenmeinungen | GermanyStreamTV.com',
     description:
       'Echte IPTV-Erfahrungen & Bewertungen zu Stabilität, Bildqualität und Support – und wie Sie seriöse Erfahrungsberichte erkennen.',
-    url: 'https://ipgermany.de/iptv-erfahrungen',
+    url: 'https://germanystreamtv.com/iptv-erfahrungen',
   },
 };
 

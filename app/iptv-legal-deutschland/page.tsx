@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: 'Ist IPTV legal in Deutschland? Rechtslage 2026 | GermanyStreamTV.com',
     description:
       'IPTV als Technologie ist legal – entscheidend ist die Quelle der Inhalte. So erkennen Sie seriöse Anbieter und streamen sicher.',
-    url: 'https://ipgermany.de/iptv-legal-deutschland',
+    url: 'https://germanystreamtv.com/iptv-legal-deutschland',
   },
 };
 

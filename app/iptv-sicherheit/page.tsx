@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: 'IPTV Sicherheit 2026: Risiken, Betrug & Schutz | GermanyStreamTV.com',
     description:
       'Risiken erkennen, Abofallen & Betrug vermeiden und Daten schützen – so streamen Sie IPTV sicher und seriös.',
-    url: 'https://ipgermany.de/iptv-sicherheit',
+    url: 'https://germanystreamtv.com/iptv-sicherheit',
   },
 };
 

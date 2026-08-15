@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: 'IPTV Vergleich 2026: Anbieter & Tarife vergleichen | GermanyStreamTV.com',
     description:
       'IPTV-Anbieter richtig vergleichen: Die 6 wichtigsten Kriterien für Stabilität, Qualität, Preis und Support.',
-    url: 'https://ipgermany.de/iptv-vergleich',
+    url: 'https://germanystreamtv.com/iptv-vergleich',
   },
 };
 

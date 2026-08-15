@@ -20,7 +20,7 @@ export const metadata = {
   openGraph: {
     title: 'Premium IPTV Funktionen: 4K, EPG & Anti-Buffering | GermanyStreamTV.com',
     description: 'Echtes 4K Ultra HD mit HDR10+, EPG-Programmführer, Catch-Up TV, Anti-Buffering-Technologie und Mehrfachnutzung – alle Premium-Funktionen von GermanyStreamTV.com.',
-    url: 'https://ipgermany.de/features',
+    url: 'https://germanystreamtv.com/features',
   },
 };
 

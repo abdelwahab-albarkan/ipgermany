@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: 'Beste IPTV Apps 2026: Fire Stick, Samsung, LG & Android | GermanyStreamTV.com',
     description:
       'TiviMate, IPTV Smarters Pro, Smart IPTV, IBO Player & OTT Navigator im Vergleich – die beste IPTV-App für jedes Gerät.',
-    url: 'https://ipgermany.de/iptv-apps',
+    url: 'https://germanystreamtv.com/iptv-apps',
   },
 };
 

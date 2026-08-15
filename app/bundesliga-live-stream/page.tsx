@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'Bundesliga live streamen 2026: So geht’s über IPTV | GermanyStreamTV.com',
     description:
       'Die Bundesliga live über IPTV streamen – in HD & 60 FPS, mit stabilen Servern ohne Ruckeln. Voraussetzungen & beste Einstellungen.',
-    url: 'https://ipgermany.de/bundesliga-live-stream',
+    url: 'https://germanystreamtv.com/bundesliga-live-stream',
   },
 };
 

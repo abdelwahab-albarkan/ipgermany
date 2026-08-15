@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: 'Sport IPTV Deutschland 2026: Fußball & Sport live streamen | GermanyStreamTV.com',
     description:
       'Fußball, Bundesliga, Champions League, Formel 1 & mehr live in HD/4K mit 60 FPS – stabile Server ohne Ruckeln. Sport-IPTV für echte Fans.',
-    url: 'https://ipgermany.de/iptv-sport',
+    url: 'https://germanystreamtv.com/iptv-sport',
   },
 };
 

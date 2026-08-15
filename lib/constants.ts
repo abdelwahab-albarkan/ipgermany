@@ -1,6 +1,6 @@
 export const SITE_CONFIG = {
   name: "GermanyStreamTV.com",
-  domain: "https://ipgermany.de",
+  domain: "https://germanystreamtv.com",
   supportEmail: "support@ipgermany.de",
   whatsappNumber: "+212625218443",
   socialLinks: {

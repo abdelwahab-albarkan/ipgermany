@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: 'IPTV Deutschland 2026: Premium IPTV-Abo kaufen | GermanyStreamTV.com',
     description:
       'Über 50.000 Live-TV-Sender, Sport & 180.000+ Filme & Serien in echtem 4K mit HDR10+. IPTV Abo ohne Vertrag – kompatibel mit Firestick, Samsung, LG & Apple TV.',
-    url: 'https://ipgermany.de',
+    url: 'https://germanystreamtv.com',
   },
 };
 

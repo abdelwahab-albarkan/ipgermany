@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'TiviMate einrichten 2026: IPTV Player Anleitung | GermanyStreamTV.com',
     description:
       'TiviMate IPTV Player installieren & einrichten – mit Xtream Codes API, EPG und Aufnahmefunktion. Die Top-App für Fire Stick & Android TV.',
-    url: 'https://ipgermany.de/tivimate-iptv',
+    url: 'https://germanystreamtv.com/tivimate-iptv',
   },
 };
 

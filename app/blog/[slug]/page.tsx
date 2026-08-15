@@ -61,7 +61,7 @@ export default async function BlogPostPage({ params }: { params: PageParams }) {
     notFound();
   }
 
-  const postUrl = `https://ipgermany.de/blog/${post.slug}`;
+  const postUrl = `https://germanystreamtv.com/blog/${post.slug}`;
 
   const structuredData: Record<string, unknown>[] = [
     articleSchema(post),

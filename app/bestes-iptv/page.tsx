@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: 'Bestes IPTV Deutschland 2026: Vergleich & Testsieger | GermanyStreamTV.com',
     description:
       'Woran Sie das beste IPTV erkennen: Stabilität, echtes 4K, EPG, seriöser Anbieter & fairer Preis. Vergleich, Erfahrungen und Testkriterien.',
-    url: 'https://ipgermany.de/bestes-iptv',
+    url: 'https://germanystreamtv.com/bestes-iptv',
   },
 };
 

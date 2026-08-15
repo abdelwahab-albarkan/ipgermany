@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'IPTV auf Android TV & Google TV installieren 2026 | GermanyStreamTV.com',
     description:
       'Android TV & Google TV IPTV einrichten mit TiviMate & IPTV Smarters Pro – direkt aus dem Play Store. 50.000+ Sender in echtem 4K.',
-    url: 'https://ipgermany.de/iptv-android-tv',
+    url: 'https://germanystreamtv.com/iptv-android-tv',
   },
 };
 

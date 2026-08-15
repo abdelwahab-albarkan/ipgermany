@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: 'Was ist IPTV? Einfach erklärt (Ratgeber 2026) | GermanyStreamTV.com',
     description:
       'IPTV einfach erklärt: Fernsehen über das Internet. Wie es funktioniert, was Sie brauchen und welche Vorteile IPTV bietet.',
-    url: 'https://ipgermany.de/was-ist-iptv',
+    url: 'https://germanystreamtv.com/was-ist-iptv',
   },
 };
 

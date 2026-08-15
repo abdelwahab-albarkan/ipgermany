@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'IPTV auf Fire Stick installieren 2026: Anleitung | GermanyStreamTV.com',
     description:
       'Fire TV Stick IPTV einrichten in unter 5 Minuten – mit Downloader, TiviMate & IPTV Smarters Pro. Streamen Sie 50.000+ Sender in echtem 4K.',
-    url: 'https://ipgermany.de/iptv-fire-stick',
+    url: 'https://germanystreamtv.com/iptv-fire-stick',
   },
 };
 

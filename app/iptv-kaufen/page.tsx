@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: 'IPTV kaufen 2026: Premium IPTV-Abo ohne Vertrag | GermanyStreamTV.com',
     description:
       'Premium IPTV in Deutschland kaufen – 50.000+ Sender & 180.000 VODs in 4K, ohne Vertrag, ab 5,92 €/Monat. Freischaltung in 60 Sekunden.',
-    url: 'https://ipgermany.de/iptv-kaufen',
+    url: 'https://germanystreamtv.com/iptv-kaufen',
   },
 };
 

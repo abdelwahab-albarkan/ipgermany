@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'IPTV auf LG Smart TV installieren 2026 (webOS) | GermanyStreamTV.com',
     description:
       'LG Smart TV IPTV einrichten mit Smart IPTV, IBO Player & IPTV Smarters Pro – direkt am webOS-Fernseher. 50.000+ Sender in echtem 4K.',
-    url: 'https://ipgermany.de/iptv-lg-tv',
+    url: 'https://germanystreamtv.com/iptv-lg-tv',
   },
 };
 

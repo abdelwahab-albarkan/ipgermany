@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'IPTV Smarters Pro einrichten 2026: Anleitung | GermanyStreamTV.com',
     description:
       'IPTV Smarters Pro installieren & einrichten – kostenlos für Fire Stick, Android, iOS, Samsung & LG. Mit Xtream Codes API, EPG und VOD.',
-    url: 'https://ipgermany.de/iptv-smarters-pro',
+    url: 'https://germanystreamtv.com/iptv-smarters-pro',
   },
 };
 
