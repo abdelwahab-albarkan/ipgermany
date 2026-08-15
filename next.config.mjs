@@ -1,0 +1,82 @@
+/** @type {import('next').NextConfig} */
+
+const isDev = process.env.NODE_ENV !== 'production';
+
+// Content Security Policy — pragmatic, hardening-focused, and compatible with
+// Next.js inline bootstrap scripts + Tailwind/Framer inline styles + next/image.
+// `unsafe-eval` and websockets are dev-only (Turbopack HMR); production is stricter.
+const csp = [
+  "default-src 'self'",
+  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ''}`,
+  "style-src 'self' 'unsafe-inline'",
+  "img-src 'self' data: blob: https://image.tmdb.org https://images.unsplash.com",
+  "font-src 'self' data:",
+  `connect-src 'self'${isDev ? ' ws: wss:' : ''}`,
+  "media-src 'self'",
+  "frame-ancestors 'self'",
+  "base-uri 'self'",
+  "form-action 'self'",
+  "object-src 'none'",
+  ...(isDev ? [] : ['upgrade-insecure-requests']),
+].join('; ');
+
+const securityHeaders = [
+  { key: 'Content-Security-Policy', value: csp },
+  { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
+  { key: 'X-Content-Type-Options', value: 'nosniff' },
+  { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+  { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+  { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(), browsing-topics=()' },
+  { key: 'X-DNS-Prefetch-Control', value: 'on' },
+];
+
+const nextConfig = {
+  poweredByHeader: false,
+  compress: true,
+  reactStrictMode: true,
+
+  images: {
+    // Serve modern formats first; Next negotiates by Accept header.
+    formats: ['image/avif', 'image/webp'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'image.tmdb.org',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        pathname: '/**',
+      },
+    ],
+  },
+
+  async redirects() {
+    // Old /legal/* paths → new German-slug legal routes (permanent).
+    return [
+      { source: '/legal/impressum', destination: '/impressum', permanent: true },
+      { source: '/legal/privacy', destination: '/datenschutz', permanent: true },
+      { source: '/legal/terms', destination: '/agb', permanent: true },
+      { source: '/legal/refunds', destination: '/refund', permanent: true },
+      { source: '/legal/cookies', destination: '/cookies', permanent: true },
+    ];
+  },
+
+  async headers() {
+    return [
+      {
+        // Apply security headers to every route.
+        source: '/:path*',
+        headers: securityHeaders,
+      },
+      {
+        // Cache local images aggressively (filenames are stable).
+        source: '/:all*(png|jpg|jpeg|webp|avif|svg|ico|gif)',
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=2592000, stale-while-revalidate=86400' }],
+      },
+    ];
+  },
+};
+
+export default nextConfig;

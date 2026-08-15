@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-tajawal);
+  --font-spartan: var(--font-cairo);
+  --font-anton: var(--font-cairo);
+  --font-inter: var(--font-tajawal);
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  --color-background: #070707;
+  --color-surface: #101010;
+  --color-surface-card: #181818;
+  --color-surface-hover: #1e1e1e;
+  
+  --color-primary-50: #e7fdf1;
+  --color-primary-100: #c3f9dc;
+  --color-primary-500: #10D96F;
+  --color-primary-600: #0FC162;
+  --color-primary-700: #0DA653;
+  --color-primary-900: #064e2b;
+  --color-border-subtle: #222222;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-glow: 0 0 20px 0 rgba(16, 217, 111, 0.18);
+  --shadow-glow-hover: 0 0 30px 0 rgba(16, 217, 111, 0.35);
+  --shadow-card: 0 1px 0 0 rgba(255, 255, 255, 0.04) inset, 0 12px 32px -12px rgba(0, 0, 0, 0.7);
+  --shadow-premium: 0 1px 0 0 rgba(255, 255, 255, 0.05) inset, 0 24px 60px -20px rgba(0, 0, 0, 0.8);
+
+  --animate-slide-in-1: slideInFromLeft 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-slide-in-2: slideInFromLeft 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards;
+  --animate-slide-in-3: slideInFromLeft 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+  --animate-fade-in: fadeIn 0.2s ease-out;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translate3d(-20px, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Respect users who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in {
+    animation: none;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #070707;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #070707;
+    color: #f4f4f5;
+  }
+
+  /* Brand-tinted text selection */
+  ::selection {
+    background-color: rgba(16, 217, 111, 0.28);
+    color: #ffffff;
+  }
+
+  /* Consistent keyboard focus ring in the brand green */
+  :focus-visible {
+    outline: 2px solid var(--color-primary-500);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Dark, brand-tinted scrollbar (WebKit + Firefox) */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #10D96F #101010;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0d0d0d;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1e1e1e;
+    border-radius: 9999px;
+    border: 2px solid #0d0d0d;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary-700);
+  }
+
+  /* Smooth color/opacity transitions on interactive elements */
+  a,
+  button {
+    transition-property: color, background-color, border-color, box-shadow, opacity, transform;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* Respect reduced-motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  /* Frosted-glass surface — use sparingly for overlays / floating chrome */
+  .glass {
+    background-color: rgba(20, 20, 20, 0.55);
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  /* Brand gradient text for emphasis words in headings */
+  .text-gradient {
+    background-image: linear-gradient(135deg, #10D96F 0%, #6ff0ad 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Subtle top-lit border used on premium cards */
+  .ring-hairline {
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
+  }
+
+  /* Ambient dotted grid backdrop for section backgrounds */
+  .bg-grid {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  /* Consistent icon micro-interaction: gentle lift + settle on hover */
+  .icon-hover {
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .group:hover .icon-hover,
+  .icon-hover:hover {
+    transform: translateY(-2px) scale(1.06);
+  }
+}
