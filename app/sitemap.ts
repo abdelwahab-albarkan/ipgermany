@@ -4,9 +4,20 @@ import { SITE_CONFIG } from '@/lib/constants';
 
 const BASE_URL = SITE_CONFIG.domain;
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const now = new Date();
+// Stable modification dates. Using constants (instead of `new Date()`) keeps
+// <lastmod> trustworthy: it only changes when the content actually changes.
+// `LAUNCH` (2026-08-15) is the real last-committed date of every static route
+// (commits d7cca85 / b614ec8). `EDITED` (2026-09-07) applies ONLY to routes
+// actually modified after launch, evidenced by Git/working-tree changes.
+const LAUNCH = new Date('2026-08-15T00:00:00Z');
+const EDITED = new Date('2026-09-07T00:00:00Z');
+// Only /bestes-iptv was modified in the 2026-09-07 SEO pass (title/keywords +
+// internal link). All other static routes' real last change is 2026-08-15.
+const EDITED_ROUTES = new Set<string>([
+  '/bestes-iptv',
+]);
 
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Core marketing / conversion pages
   const staticRoutes: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency'] }[] = [
     { path: '/', priority: 1.0, changeFrequency: 'daily' },
@@ -68,7 +79,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const marketingEntries: MetadataRoute.Sitemap = staticRoutes.map((route) => ({
     url: `${BASE_URL}${route.path}`,
-    lastModified: now,
+    lastModified: EDITED_ROUTES.has(route.path) ? EDITED : LAUNCH,
     changeFrequency: route.changeFrequency,
     priority: route.priority,
   }));
@@ -79,13 +90,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const posts = await getBlogPosts();
     blogEntries = posts.map((post) => ({
       url: `${BASE_URL}/blog/${post.slug}`,
-      lastModified: post.publishedAt ? new Date(post.publishedAt) : now,
-      changeFrequency: 'weekly',
+      lastModified: post.publishedAt ? new Date(post.publishedAt) : LAUNCH,
+      changeFrequency: 'weekly' as const,
       priority: 0.7,
     }));
   } catch {
     blogEntries = [];
   }
 
-  return [...marketingEntries, ...blogEntries];
+  // De-duplicate by URL: several /blog/* paths were listed in both staticRoutes
+  // and the dynamic blogEntries. Insert marketing first, then blog — so blog
+  // posts keep their real publishedAt date and each URL appears exactly once.
+  const byUrl = new Map<string, MetadataRoute.Sitemap[number]>();
+  for (const entry of [...marketingEntries, ...blogEntries]) {
+    byUrl.set(entry.url, entry);
+  }
+  return Array.from(byUrl.values());
 }

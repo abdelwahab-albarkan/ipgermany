@@ -13,7 +13,7 @@ import FAQSection from '@/components/sections/FAQSection';
 import CTASection from '@/components/sections/CTASection';
 
 export const metadata: Metadata = {
-  title: 'Bestes IPTV Deutschland 2026: Vergleich & Testsieger | GermanyStreamTV.com',
+  title: 'Bestes IPTV Deutschland 2026: Testsieger & Empfehlung | GermanyStreamTV.com',
   description:
     'Bestes IPTV in Deutschland 2026 ✓ Woran Sie ein gutes IPTV-Abo erkennen ✓ 50.000+ Sender in 4K, EPG, stabile Server & seriöser Anbieter ✓ Erfahrungen, Vergleich & Testkriterien. Jetzt informieren!',
   alternates: { canonical: '/bestes-iptv' },
@@ -21,13 +21,12 @@ export const metadata: Metadata = {
     'Bestes IPTV',
     'IPTV Test 2026',
     'IPTV Testsieger',
-    'IPTV Vergleich',
-    'IPTV Erfahrungen',
+    'bestes IPTV Deutschland',
     'bester IPTV Anbieter',
-    'IPTV Anbieter Vergleich',
+    'IPTV Empfehlung',
   ],
   openGraph: {
-    title: 'Bestes IPTV Deutschland 2026: Vergleich & Testsieger | GermanyStreamTV.com',
+    title: 'Bestes IPTV Deutschland 2026: Testsieger & Empfehlung | GermanyStreamTV.com',
     description:
       'Woran Sie das beste IPTV erkennen: Stabilität, echtes 4K, EPG, seriöser Anbieter & fairer Preis. Vergleich, Erfahrungen und Testkriterien.',
     url: 'https://germanystreamtv.com/bestes-iptv',
@@ -167,6 +166,7 @@ export default function BestesIptvPage() {
         </Reveal>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {[
+            { href: '/iptv-vergleich', title: 'IPTV Vergleich', desc: 'Anbieter & Tarife anhand objektiver Kriterien direkt vergleichen.' },
             { href: '/iptv-kaufen', title: 'IPTV kaufen', desc: 'So kaufen Sie Ihr Premium-IPTV in 4 Schritten – ohne Vertrag.' },
             { href: '/pricing', title: 'Preise & Tarife', desc: 'Alle Laufzeiten und Preise transparent im Überblick.' },
             { href: '/features', title: 'Premium-Funktionen', desc: '4K, HDR10+, EPG, Catch-Up und Anti-Buffering-Technologie.' },

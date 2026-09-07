@@ -53,13 +53,15 @@ const nextConfig = {
   },
 
   async redirects() {
-    // Old /legal/* paths → new German-slug legal routes (permanent).
     return [
+      // Old /legal/* paths → new German-slug legal routes (permanent).
       { source: '/legal/impressum', destination: '/impressum', permanent: true },
       { source: '/legal/privacy', destination: '/datenschutz', permanent: true },
       { source: '/legal/terms', destination: '/agb', permanent: true },
       { source: '/legal/refunds', destination: '/refund', permanent: true },
       { source: '/legal/cookies', destination: '/cookies', permanent: true },
+      // Misspelled blog slug discovered in GSC ("xstream") → correct article ("xtream").
+      { source: '/blog/m3u-vs-xstream-codes', destination: '/blog/m3u-vs-xtream-codes', permanent: true },
     ];
   },
 
