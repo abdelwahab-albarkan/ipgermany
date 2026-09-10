@@ -4,15 +4,15 @@ import StatsBar from '@/components/sections/StatsBar';
 import CTASection from '@/components/sections/CTASection';
 
 export const metadata = {
-  title: 'Über GermanyStreamTV.com: Unser Premium-IPTV-Netzwerk | GermanyStreamTV.com',
+  title: 'Über GermanyStreamTV.com: Ihr Premium IPTV Anbieter',
   description: 'Erfahren Sie mehr über GermanyStreamTV.com. Gegründet von Netzwerk-Ingenieuren für erstklassiges, stabiles IPTV in Deutschland mit 99,9% Uptime, 26 Edge-Servern und echtem 24/7-Support.',
   alternates: { canonical: '/about' },
   keywords: [
+    'germanystreamtv',
+    'über germanystreamtv',
     'IPTV Anbieter',
     'IPTV Anbieter seriös',
     'IPTV Deutschland',
-    'GermanyStreamTV.com Geschichte',
-    'Premium IPTV Server',
   ],
 };
 

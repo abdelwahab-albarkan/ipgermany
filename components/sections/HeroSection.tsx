@@ -30,13 +30,13 @@ export default function HeroSection({ movies }: HeroSectionProps) {
           </div>
 
           <h1 className="font-spartan uppercase text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[0.9] self-center lg:self-start text-center lg:text-left mb-8">
-            <span className="block text-white animate-slide-in-1">PREMIUM IPTV</span>
-            <span className="block text-gradient animate-slide-in-2">IN DEUTSCHLAND</span>
-            <span className="block text-white animate-slide-in-3">50.000+ SENDER IN 4K</span>
+            <span className="block text-white animate-slide-in-1">IPTV KAUFEN</span>
+            <span className="block text-gradient animate-slide-in-2">PREMIUM IPTV-ABO</span>
+            <span className="block text-white animate-slide-in-3">IN DEUTSCHLAND</span>
           </h1>
 
           <p className="text-gray-400 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl text-center lg:text-left self-center lg:self-start">
-            Live-TV, über 1.800 Sportkanäle und mehr als 180.000 Filme &amp; Serien in echtem 4K mit HDR10+. Ohne Vertrag, ohne Wartezeit – freigeschaltet in unter 60 Sekunden.
+            Live-TV, über 1.800 Sportkanäle und mehr als 180.000 Filme &amp; Serien in echtem 4K mit HDR10+. Ohne Vertrag, ohne Wartezeit – freigeschaltet in unter 60 Sekunden. Informieren Sie sich im <Link href="/blog/iptv-kaufen-leitfaden-2026" className="text-primary-500 hover:underline font-semibold">IPTV Kauf-Leitfaden lesen</Link> oder sehen Sie alle <Link href="/iptv-vergleich" className="text-primary-500 hover:underline font-semibold">IPTV Anbieter im Vergleich</Link>.
           </p>
 
           {/* Action CTAs — spring micro-interactions */}

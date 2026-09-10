@@ -3,9 +3,15 @@ import { Layers, Users, TrendingUp, Landmark } from 'lucide-react';
 import CTASection from '@/components/sections/CTASection';
 
 export const metadata = {
-  title: 'IPTV Reseller werden | GermanyStreamTV.com Reseller-Panel',
+  title: 'IPTV Reseller werden 2026: Das beste IPTV Panel | GermanyStreamTV.com',
   description: 'Starten Sie Ihr eigenes IPTV-Geschäft mit GermanyStreamTV.com. Zugriff auf unser Premium-Reseller-Dashboard, verwalten Sie Kundenguthaben und erstellen Sie M3U-Links.',
   alternates: { canonical: '/reseller' },
+  keywords: [
+    'iptv reseller',
+    'iptv reseller werden',
+    'iptv panel',
+    'iptv reseller programm',
+  ],
 };
 
 export default function ResellerPage() {

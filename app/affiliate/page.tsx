@@ -3,9 +3,14 @@ import { DollarSign, ShieldCheck, Share2, Award } from 'lucide-react';
 import CTASection from '@/components/sections/CTASection';
 
 export const metadata = {
-  title: 'IPTV Affiliate-Partnerprogramm | GermanyStreamTV.com',
-  description: 'Werden Sie GermanyStreamTV.com IPTV-Affiliate-Partner. Verdienen Sie bis zu 30 % wiederkehrende Provision auf jede vermittelte Abonnement-Bestellung. Gut konvertierende Links.',
+  title: 'IPTV Affiliate Programm: Bis zu 40% Provision verdienen | GermanyStreamTV.com',
+  description: 'Werden Sie GermanyStreamTV.com IPTV-Affiliate-Partner. Verdienen Sie bis zu 40 % wiederkehrende Provision auf jede vermittelte Abonnement-Bestellung. Gut konvertierende Links.',
   alternates: { canonical: '/affiliate' },
+  keywords: [
+    'iptv affiliate',
+    'iptv affiliate programm',
+    'iptv reseller programm',
+  ],
 };
 
 export default function AffiliatePage() {

@@ -19,24 +19,24 @@ import { getPopularMovies, getPopularSeries } from '@/lib/tmdb';
 import { getBlogPosts } from '@/lib/mongodb';
 
 export const metadata: Metadata = {
-  title: 'IPTV Deutschland 2026: Premium IPTV-Abo kaufen | GermanyStreamTV.com',
+  title: 'IPTV kaufen 2026: Premium IPTV-Abo ab 5,92 € | GermanyStreamTV.com',
   description:
-    'IPTV kaufen leicht gemacht ✓ Über 50.000 Live-TV-Sender, Sport & 180.000+ Filme/Serien in echtem 4K mit HDR10+ ✓ IPTV Abo ohne Vertrag ab 5,92 €/Monat ✓ Freischaltung in 60 Sekunden.',
+    'Jetzt Premium IPTV kaufen in Deutschland ✓ Über 50.000 Live-TV-Sender & 180.000 VODs in 4K ✓ IPTV Abo ohne Vertrag ab 5,92 €/Monat ✓ Freischaltung in 60 Sekunden!',
   alternates: { canonical: '/' },
   keywords: [
-    'IPTV Deutschland',
     'IPTV kaufen',
+    'IPTV Deutschland',
     'IPTV Abo',
     'Bestes IPTV',
     'Premium IPTV',
     'IPTV ohne Vertrag',
-    '4K IPTV Deutschland',
+    'IPTV bestellen',
     'IPTV Anbieter',
   ],
   openGraph: {
-    title: 'IPTV Deutschland 2026: Premium IPTV-Abo kaufen | GermanyStreamTV.com',
+    title: 'IPTV kaufen 2026: Premium IPTV-Abo ab 5,92 € | GermanyStreamTV.com',
     description:
-      'Über 50.000 Live-TV-Sender, Sport & 180.000+ Filme & Serien in echtem 4K mit HDR10+. IPTV Abo ohne Vertrag – kompatibel mit Firestick, Samsung, LG & Apple TV.',
+      'Jetzt Premium IPTV kaufen in Deutschland ✓ Über 50.000 Live-TV-Sender & 180.000 VODs in 4K ✓ IPTV Abo ohne Vertrag ab 5,92 €/Monat.',
     url: 'https://germanystreamtv.com',
   },
 };

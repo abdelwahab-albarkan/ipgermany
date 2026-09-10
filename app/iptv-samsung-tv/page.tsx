@@ -9,22 +9,21 @@ import FAQSection from '@/components/sections/FAQSection';
 import CTASection from '@/components/sections/CTASection';
 
 export const metadata: Metadata = {
-  title: 'IPTV auf Samsung Smart TV installieren 2026 | GermanyStreamTV.com',
+  title: 'IPTV auf Samsung Smart TV (Tizen) installieren 2026 | GermanyStreamTV.com',
   description:
-    'IPTV auf Samsung Smart TV (Tizen) einrichten ✓ Schritt-für-Schritt-Anleitung mit Smart IPTV, IBO Player & IPTV Smarters Pro ✓ Ohne PC, direkt am TV ✓ 50.000+ Sender in 4K. Jetzt loslegen!',
+    'IPTV auf Samsung Smart TV mit Tizen OS installieren ✓ Smart IPTV & IBO Player Schritt-für-Schritt-Anleitung. 50.000+ Sender direkt am Samsung TV.',
   alternates: { canonical: '/iptv-samsung-tv' },
   keywords: [
-    'IPTV Samsung TV',
+    'IPTV samsung tv',
+    'samsung smart tv iptv',
+    'iptv samsung',
     'IPTV auf Samsung Smart TV installieren',
     'Samsung TV IPTV App',
-    'IPTV Tizen',
-    'beste IPTV App für Samsung TV',
-    'Smart IPTV Samsung',
   ],
   openGraph: {
-    title: 'IPTV auf Samsung Smart TV installieren 2026 | GermanyStreamTV.com',
+    title: 'IPTV auf Samsung Smart TV (Tizen) installieren 2026 | GermanyStreamTV.com',
     description:
-      'Samsung Smart TV IPTV einrichten mit Smart IPTV, IBO Player & IPTV Smarters Pro – direkt am Fernseher, ohne PC. 50.000+ Sender in 4K.',
+      'IPTV auf Samsung Smart TV mit Tizen OS installieren: Smart IPTV & IBO Player Schritt-für-Schritt-Anleitung.',
     url: 'https://germanystreamtv.com/iptv-samsung-tv',
   },
 };
@@ -46,7 +45,7 @@ export default function IptvSamsungTvPage() {
         image={{ src: '/images/samsungsmarttv.png', alt: 'Samsung Smart TV (Tizen) für IPTV' }}
         h1={
           <>
-            IPTV auf <span className="text-gradient">Samsung Smart TV</span> installieren
+            IPTV auf <span className="text-gradient">Samsung Smart TV</span> einrichten
           </>
         }
         intro={

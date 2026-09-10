@@ -9,22 +9,21 @@ import FAQSection from '@/components/sections/FAQSection';
 import CTASection from '@/components/sections/CTASection';
 
 export const metadata: Metadata = {
-  title: 'IPTV auf LG Smart TV installieren 2026 (webOS) | GermanyStreamTV.com',
+  title: 'IPTV auf LG Smart TV (webOS) installieren 2026 | GermanyStreamTV.com',
   description:
-    'IPTV auf LG Smart TV (webOS) einrichten ✓ Schritt-für-Schritt-Anleitung mit Smart IPTV, IBO Player & IPTV Smarters Pro ✓ Direkt am TV, ohne PC ✓ 50.000+ Sender in echtem 4K. Jetzt starten!',
+    'IPTV auf LG Smart TV mit webOS einrichten ✓ Smart IPTV, IBO Player & IPTV Smarters Pro Anleitung. Ohne Zusatzgeräte direkt am LG TV streamen.',
   alternates: { canonical: '/iptv-lg-tv' },
   keywords: [
     'IPTV LG TV',
+    'lg smart tv iptv',
+    'iptv lg smart tv',
     'IPTV auf LG Smart TV installieren',
     'LG TV IPTV App',
-    'IPTV webOS',
-    'beste IPTV App für LG TV',
-    'Smart IPTV LG',
   ],
   openGraph: {
-    title: 'IPTV auf LG Smart TV installieren 2026 (webOS) | GermanyStreamTV.com',
+    title: 'IPTV auf LG Smart TV (webOS) installieren 2026 | GermanyStreamTV.com',
     description:
-      'LG Smart TV IPTV einrichten mit Smart IPTV, IBO Player & IPTV Smarters Pro – direkt am webOS-Fernseher. 50.000+ Sender in echtem 4K.',
+      'IPTV auf LG Smart TV mit webOS einrichten: Smart IPTV, IBO Player & IPTV Smarters Pro Anleitung.',
     url: 'https://germanystreamtv.com/iptv-lg-tv',
   },
 };
@@ -46,7 +45,7 @@ export default function IptvLgTvPage() {
         image={{ src: '/images/LG TV (webOS).png', alt: 'LG Smart TV (webOS) für IPTV' }}
         h1={
           <>
-            IPTV auf <span className="text-gradient">LG Smart TV</span> installieren
+            IPTV auf <span className="text-gradient">LG Smart TV</span> einrichten
           </>
         }
         intro={

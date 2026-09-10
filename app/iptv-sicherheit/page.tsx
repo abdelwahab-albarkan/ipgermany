@@ -8,22 +8,22 @@ import FAQSection from '@/components/sections/FAQSection';
 import CTASection from '@/components/sections/CTASection';
 
 export const metadata: Metadata = {
-  title: 'IPTV Sicherheit 2026: Risiken, Betrug & Schutz | GermanyStreamTV.com',
+  title: 'IPTV Sicherheit 2026: Ist IPTV sicher? Schutz & VPN | GermanyStreamTV.com',
   description:
-    'IPTV Sicherheit in Deutschland ✓ Risiken erkennen, Abofallen & Betrug vermeiden, Daten schützen ✓ So streamen Sie sicher und seriös. Der komplette IPTV-Sicherheitsratgeber 2026.',
+    'IPTV Sicherheit in Deutschland ✓ Ist IPTV sicher? Risiken erkennen, Abofallen vermeiden, VPN & Daten schützen. Der vollständige Sicherheitsratgeber 2026.',
   alternates: { canonical: '/iptv-sicherheit' },
   keywords: [
     'IPTV Sicherheit',
+    'iptv sicher',
+    'ist iptv sicher',
     'IPTV Risiken',
     'IPTV Abofalle',
-    'IPTV Betrug vermeiden',
     'IPTV Datenschutz',
-    'IPTV seriös',
   ],
   openGraph: {
-    title: 'IPTV Sicherheit 2026: Risiken, Betrug & Schutz | GermanyStreamTV.com',
+    title: 'IPTV Sicherheit 2026: Ist IPTV sicher? Schutz & VPN | GermanyStreamTV.com',
     description:
-      'Risiken erkennen, Abofallen & Betrug vermeiden und Daten schützen – so streamen Sie IPTV sicher und seriös.',
+      'Ist IPTV sicher? Risiken erkennen, Abofallen vermeiden, VPN & Daten schützen – so streamen Sie IPTV sicher.',
     url: 'https://germanystreamtv.com/iptv-sicherheit',
   },
 };
@@ -43,7 +43,7 @@ export default function IptvSicherheitPage() {
         tagline="Sicherheitsratgeber · Stand 2026"
         h1={
           <>
-            IPTV <span className="text-gradient">Sicherheit:</span> Risiken &amp; Schutz
+            IPTV <span className="text-gradient">Sicherheit &amp; Datenschutz:</span> So streamen Sie sicher
           </>
         }
         intro={

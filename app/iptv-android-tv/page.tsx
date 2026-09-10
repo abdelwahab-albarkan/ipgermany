@@ -9,22 +9,22 @@ import FAQSection from '@/components/sections/FAQSection';
 import CTASection from '@/components/sections/CTASection';
 
 export const metadata: Metadata = {
-  title: 'IPTV auf Android TV & Google TV installieren 2026 | GermanyStreamTV.com',
+  title: 'IPTV auf Android TV & TV Box einrichten 2026 | GermanyStreamTV.com',
   description:
-    'IPTV auf Android TV & Google TV einrichten ✓ Anleitung mit TiviMate, IPTV Smarters Pro & OTT Navigator ✓ Direkt aus dem Google Play Store ✓ 50.000+ Sender in echtem 4K. Jetzt starten!',
+    'IPTV auf Android TV & Smart TV Boxen einrichten ✓ Beste Android IPTV Apps (TiviMate, Smarters Pro), M3U & Xtream Setup. Jetzt in 4K streamen!',
   alternates: { canonical: '/iptv-android-tv' },
   keywords: [
     'IPTV Android TV',
+    'android tv iptv',
+    'iptv android box',
+    'android tv iptv app',
     'IPTV auf Android TV installieren',
-    'beste IPTV App für Android TV',
-    'IPTV Google TV',
-    'TiviMate Android TV',
     'Android TV Box IPTV',
   ],
   openGraph: {
-    title: 'IPTV auf Android TV & Google TV installieren 2026 | GermanyStreamTV.com',
+    title: 'IPTV auf Android TV & TV Box einrichten 2026 | GermanyStreamTV.com',
     description:
-      'Android TV & Google TV IPTV einrichten mit TiviMate & IPTV Smarters Pro – direkt aus dem Play Store. 50.000+ Sender in echtem 4K.',
+      'IPTV auf Android TV & Smart TV Boxen einrichten mit TiviMate & IPTV Smarters Pro. 50.000+ Sender in echtem 4K.',
     url: 'https://germanystreamtv.com/iptv-android-tv',
   },
 };
@@ -45,7 +45,7 @@ export default function IptvAndroidTvPage() {
         tagline="Android TV · Google TV · Android-Boxen"
         h1={
           <>
-            IPTV auf <span className="text-gradient">Android TV</span> installieren
+            IPTV auf <span className="text-gradient">Android TV &amp; Android Box</span> installieren
           </>
         }
         image={{ src: '/images/Android TV.png', alt: 'Android TV & Google TV Box für IPTV' }}

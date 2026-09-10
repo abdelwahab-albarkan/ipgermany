@@ -9,22 +9,21 @@ import FAQSection from '@/components/sections/FAQSection';
 import CTASection from '@/components/sections/CTASection';
 
 export const metadata: Metadata = {
-  title: 'IPTV auf Apple TV installieren 2026 (tvOS) | GermanyStreamTV.com',
+  title: 'IPTV auf Apple TV 4K einrichten 2026: Anleitung | GermanyStreamTV.com',
   description:
-    'IPTV auf Apple TV einrichten ✓ Anleitung mit IPTV Smarters, GSE Smart IPTV & iPlayTV aus dem App Store ✓ Kein Jailbreak nötig ✓ 50.000+ Sender in echtem 4K. Jetzt in Minuten loslegen!',
+    'IPTV auf Apple TV 4K installieren ✓ Beste iOS & tvOS IPTV Apps (iPlayTV, IPTVX) im Test. Schnell eingerichtet & flüssige 4K-Streams.',
   alternates: { canonical: '/iptv-apple-tv' },
   keywords: [
     'IPTV Apple TV',
+    'apple tv iptv',
+    'iptv apple tv 4k',
     'IPTV auf Apple TV installieren',
     'beste IPTV App für Apple TV',
-    'IPTV Apple TV 4K',
-    'GSE Smart IPTV Apple TV',
-    'IPTV Smarters Apple TV',
   ],
   openGraph: {
-    title: 'IPTV auf Apple TV installieren 2026 (tvOS) | GermanyStreamTV.com',
+    title: 'IPTV auf Apple TV 4K einrichten 2026: Anleitung | GermanyStreamTV.com',
     description:
-      'Apple TV IPTV einrichten mit IPTV Smarters, GSE Smart IPTV & iPlayTV – direkt aus dem App Store, ohne Jailbreak. 50.000+ Sender in 4K.',
+      'Apple TV 4K IPTV einrichten mit iPlayTV & IPTVX – direkt aus dem App Store, ohne Jailbreak. 50.000+ Sender in 4K.',
     url: 'https://germanystreamtv.com/iptv-apple-tv',
   },
 };
@@ -46,7 +45,7 @@ export default function IptvAppleTvPage() {
         image={{ src: '/images/appletv.png', alt: 'Apple TV 4K für IPTV-Streaming' }}
         h1={
           <>
-            IPTV auf <span className="text-gradient">Apple TV</span> installieren
+            IPTV auf <span className="text-gradient">Apple TV 4K</span> installieren &amp; streamen
           </>
         }
         intro={

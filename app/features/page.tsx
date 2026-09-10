@@ -5,20 +5,19 @@ import CompareSection from '@/components/sections/CompareSection';
 import CTASection from '@/components/sections/CTASection';
 
 export const metadata = {
-  title: 'Premium IPTV Funktionen: 4K, EPG & Anti-Buffering | GermanyStreamTV.com',
+  title: 'IPTV Features & Funktionen: 50.000+ Sender in 4K | GermanyStreamTV.com',
   description: 'Warum GermanyStreamTV.com das beste IPTV in Deutschland ist ✓ Echtes 4K Ultra HD mit HDR10+ ✓ EPG-Programmführer & Catch-Up TV ✓ Anti-Buffering-Technologie ✓ IPTV mit Aufnahmefunktion & Mehrfachnutzung.',
   keywords: [
+    'IPTV Features',
+    'iptv funktionen',
+    'iptv vorteile',
+    'iptv alle sender',
     'Premium IPTV',
     '4K IPTV Deutschland',
-    'IPTV HD',
-    'IPTV mit EPG',
-    'IPTV mit Aufnahmefunktion',
-    'IPTV ohne Buffering',
-    'IPTV Mehrfachnutzung',
   ],
   alternates: { canonical: '/features' },
   openGraph: {
-    title: 'Premium IPTV Funktionen: 4K, EPG & Anti-Buffering | GermanyStreamTV.com',
+    title: 'IPTV Features & Funktionen: 50.000+ Sender in 4K | GermanyStreamTV.com',
     description: 'Echtes 4K Ultra HD mit HDR10+, EPG-Programmführer, Catch-Up TV, Anti-Buffering-Technologie und Mehrfachnutzung – alle Premium-Funktionen von GermanyStreamTV.com.',
     url: 'https://germanystreamtv.com/features',
   },
