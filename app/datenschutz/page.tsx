@@ -66,13 +66,17 @@ export default function DatenschutzPage() {
           </p>
         </Placeholder>
 
-        <h2 className="text-xl font-bold text-white mt-6">3. Webanalyse mit Google Analytics (nur mit Einwilligung)</h2>
+        <h2 className="text-xl font-bold text-white mt-6">3. Webanalyse mit Google Analytics (Google Consent Mode v2)</h2>
         <p>
           Diese Website nutzt <strong>Google Analytics 4</strong>, einen Webanalysedienst der Google Ireland
-          Limited (Gordon House, Barrow Street, Dublin 4, Irland). Google Analytics wird{' '}
-          <strong>ausschließlich nach Ihrer ausdrücklichen Einwilligung</strong> über unser Cookie-Banner
-          geladen. Ohne Einwilligung werden weder der Analyse-Code ausgeführt noch Analyse-Cookies gesetzt
-          noch Daten an Google übermittelt.
+          Limited (Gordon House, Barrow Street, Dublin 4, Irland). Wir binden Google Analytics mit{' '}
+          <strong>Google Consent Mode v2</strong> ein: Der Analyse-Tag wird zwar auf jeder Seite geladen,
+          steht aber <strong>standardmäßig auf „denied“</strong>. Das bedeutet: <strong>Ohne Ihre
+          Einwilligung werden keine Analyse- oder Werbe-Cookies gesetzt und keine personenbezogenen Kennungen
+          gespeichert.</strong> Vor der Einwilligung können lediglich cookielose, aggregierte Signale
+          (Consent Mode) übertragen werden, die keine Identifizierung ermöglichen. Erst nach Ihrer
+          Einwilligung („Akzeptieren“) wird der Status auf „granted“ gesetzt und die vollständige Messung mit
+          Cookies aktiviert.
         </p>
         <p>
           Bei erteilter Einwilligung verarbeitet Google Analytics pseudonyme Nutzungsdaten, um die Nutzung

@@ -10,13 +10,25 @@ const STORAGE_KEY = 'gsttv-consent'; // 'granted' | 'denied'
 
 type Consent = 'unknown' | 'granted' | 'denied';
 
+// Fire a gtag consent update at runtime (banner interactions).
+function updateConsent(granted: boolean) {
+  const w = window as unknown as { gtag?: (...args: unknown[]) => void };
+  const v = granted ? 'granted' : 'denied';
+  w.gtag?.('consent', 'update', {
+    ad_storage: v,
+    analytics_storage: v,
+    ad_user_data: v,
+    ad_personalization: v,
+  });
+}
+
 /**
- * GDPR consent-gated Google Analytics.
- * - No GA script, no cookies, and no network calls to Google occur before the
- *   visitor explicitly clicks "Akzeptieren".
- * - The decision is stored in localStorage; the banner does not reappear until
- *   the choice is withdrawn (footer "Cookie-Einstellungen" dispatches
- *   `open-cookie-consent`).
+ * Google Analytics 4 with Google Consent Mode v2.
+ * - The GA tag loads on every page (so it is detectable), but ALL storage is
+ *   denied by default — no analytics/ads cookies or identifiers are stored
+ *   until the visitor accepts. Returning visitors who previously accepted are
+ *   upgraded to "granted" immediately (in the inline init script).
+ * - Vercel Web Analytics is handled separately (cookieless, in app/layout.tsx).
  */
 export default function CookieConsent() {
   const [consent, setConsent] = useState<Consent>('unknown');
@@ -41,27 +53,26 @@ export default function CookieConsent() {
     } catch {
       /* ignore write failures */
     }
+    updateConsent(value === 'granted');
     setConsent(value);
   };
 
   return (
     <>
-      {/* Google Analytics — mounted ONLY after explicit consent */}
-      {consent === 'granted' && (
-        <>
-          <Script
-            id="ga-src"
-            strategy="afterInteractive"
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-          />
-          <Script id="ga-init" strategy="afterInteractive">
-            {`window.dataLayer = window.dataLayer || [];
+      {/* Consent Mode v2: default denied, then upgrade if the visitor already granted. */}
+      <Script
+        id="ga-src"
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+      />
+      <Script id="ga-init" strategy="afterInteractive">
+        {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',analytics_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});
+try{if(localStorage.getItem('${STORAGE_KEY}')==='granted'){gtag('consent','update',{ad_storage:'granted',analytics_storage:'granted',ad_user_data:'granted',ad_personalization:'granted'});}}catch(e){}
 gtag('js', new Date());
-gtag('config', '${GA_ID}');`}
-          </Script>
-        </>
-      )}
+gtag('config','${GA_ID}');`}
+      </Script>
 
       {/* Consent banner — shown only when no decision has been stored yet */}
       {mounted && consent === 'unknown' && (
@@ -75,8 +86,8 @@ gtag('config', '${GA_ID}');`}
             <p className="text-xs sm:text-sm text-gray-300 leading-relaxed max-w-3xl">
               Wir setzen Cookies nur mit Ihrer Einwilligung. Mit „Akzeptieren“ erlauben Sie uns,
               anonymisierte Nutzungsstatistiken mit Google Analytics zu erheben, um unsere Website zu
-              verbessern. Ohne Einwilligung werden keine Analyse-Cookies gesetzt. Sie können Ihre Wahl
-              jederzeit widerrufen. Mehr dazu in unserer{' '}
+              verbessern. Ohne Einwilligung werden keine Analyse-Cookies gesetzt (Google Consent Mode).
+              Sie können Ihre Wahl jederzeit widerrufen. Mehr dazu in unserer{' '}
               <Link href="/cookies" className="text-primary-500 hover:underline">Cookie-Information</Link>{' '}
               und{' '}
               <Link href="/datenschutz" className="text-primary-500 hover:underline">Datenschutzerklärung</Link>.

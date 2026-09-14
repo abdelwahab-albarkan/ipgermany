@@ -19,9 +19,11 @@ export default function CookiesPage() {
         <h2 className="text-xl font-bold text-white mt-6">Einwilligung erforderlich</h2>
         <p>
           Diese Website setzt einwilligungspflichtige Cookies <strong>ausschließlich mit Ihrer vorherigen
-          Zustimmung</strong>. Beim ersten Besuch erscheint ein Einwilligungsbanner. Erst wenn Sie dort auf
-          „Akzeptieren“ klicken, werden Analyse-Cookies gesetzt und Google Analytics geladen. Klicken Sie auf
-          „Ablehnen“ (oder treffen Sie keine Auswahl), werden <strong>keine</strong> Analyse-Cookies gesetzt.
+          Zustimmung</strong>. Beim ersten Besuch erscheint ein Einwilligungsbanner. Google Analytics wird
+          mit <strong>Google Consent Mode v2</strong> eingebunden und ist standardmäßig auf „denied“ gesetzt:
+          Erst wenn Sie auf „Akzeptieren“ klicken, werden Analyse-Cookies gesetzt. Klicken Sie auf „Ablehnen“
+          (oder treffen Sie keine Auswahl), werden <strong>keine</strong> Analyse-Cookies gesetzt und keine
+          personenbezogenen Kennungen gespeichert.
         </p>
 
         <h2 className="text-xl font-bold text-white mt-6">1. Technisch notwendige Speicherung</h2>
