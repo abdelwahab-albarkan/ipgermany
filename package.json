@@ -10,6 +10,7 @@
     "indexnow": "node scripts/index-now.js"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "framer-motion": "12.42.0",
     "lucide-react": "^1.31.0",
     "mongodb": "^6.3.0",

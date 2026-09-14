@@ -66,15 +66,60 @@ export default function DatenschutzPage() {
           </p>
         </Placeholder>
 
-        <h2 className="text-xl font-bold text-white mt-6">3. Keine Cookies, kein Tracking, keine Analyse</h2>
+        <h2 className="text-xl font-bold text-white mt-6">3. Webanalyse mit Google Analytics (nur mit Einwilligung)</h2>
         <p>
-          Diese Website setzt <strong>keine Cookies</strong> und nutzt <strong>keine</strong> Web-Analyse-,
-          Tracking- oder Werbedienste (kein Google Analytics, kein Google Tag Manager, kein Meta Pixel,
-          keine sonstigen Zähl- oder Profiling-Werkzeuge). Es findet keine Speicherung von Informationen
-          in Ihrem Browser über <code>localStorage</code> oder <code>sessionStorage</code> zu Analysezwecken
-          statt. Weitere Details finden Sie in unserer{' '}
+          Diese Website nutzt <strong>Google Analytics 4</strong>, einen Webanalysedienst der Google Ireland
+          Limited (Gordon House, Barrow Street, Dublin 4, Irland). Google Analytics wird{' '}
+          <strong>ausschließlich nach Ihrer ausdrücklichen Einwilligung</strong> über unser Cookie-Banner
+          geladen. Ohne Einwilligung werden weder der Analyse-Code ausgeführt noch Analyse-Cookies gesetzt
+          noch Daten an Google übermittelt.
+        </p>
+        <p>
+          Bei erteilter Einwilligung verarbeitet Google Analytics pseudonyme Nutzungsdaten, um die Nutzung
+          unserer Website auszuwerten, u. a.: eine pseudonyme Kennung (Client-ID über die Cookies{' '}
+          <code>_ga</code> / <code>_ga_&lt;ID&gt;</code>), aufgerufene Seiten, Verweisquelle, ungefähre
+          Region, Gerätetyp und Browser. Die IP-Adresse wird von Google Analytics 4 gekürzt/anonymisiert
+          verarbeitet.
+        </p>
+        <ul className="list-disc pl-5 flex flex-col gap-2">
+          <li><strong>Rechtsgrundlage:</strong> Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG).</li>
+          <li><strong>Widerruf:</strong> jederzeit mit Wirkung für die Zukunft über „Cookie-Einstellungen“ im Seitenfuß oder durch Löschen der Cookies.</li>
+          <li><strong>Empfänger / Auftragsverarbeiter:</strong> Google Ireland Limited bzw. Google LLC (USA).</li>
+        </ul>
+        <Placeholder>
+          <p>
+            Vom Betreiber zu bestätigen bzw. zu ergänzen: Abschluss eines Auftragsverarbeitungsvertrags mit
+            Google (Art. 28 DSGVO), Grundlage der Datenübermittlung in die USA (EU-US Data Privacy Framework
+            und/oder EU-Standardvertragsklauseln gem. Art. 46 DSGVO) sowie die in Ihrem Google-Analytics-Konto
+            konfigurierte Aufbewahrungsdauer der Nutzungsdaten.
+          </p>
+        </Placeholder>
+        <p>
+          Weitere Informationen bietet die Datenschutzerklärung von Google:{' '}
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-primary-500 hover:underline">
+            policies.google.com/privacy
+          </a>
+          . Details zu den eingesetzten Cookies finden Sie in unserer{' '}
           <a href="/cookies" className="text-primary-500 hover:underline">Cookie-Information</a>.
         </p>
+
+        <h3 className="text-lg font-bold text-white mt-4">Vercel Web Analytics (cookielos)</h3>
+        <p>
+          Zusätzlich nutzen wir <strong>Vercel Web Analytics</strong> unseres Hosting-Anbieters Vercel Inc.
+          (USA) zur aggregierten Reichweitenmessung. Dieser Dienst arbeitet <strong>ohne Cookies</strong> und
+          <strong> ohne dauerhafte Kennungen</strong>; es werden keine Profile über verschiedene Websites
+          hinweg gebildet. Erfasst werden lediglich anonymisierte, aggregierte Kennzahlen (z. B. Seitenaufrufe,
+          Referrer, ungefähre Region, Gerätekategorie). Rechtsgrundlage ist unser berechtigtes Interesse an
+          einer reichweiten- und leistungsbezogenen Auswertung (Art. 6 Abs. 1 lit. f DSGVO). Da keine
+          Informationen in Ihrem Endgerät gespeichert oder ausgelesen werden, ist hierfür keine Einwilligung
+          nach § 25 TDDDG erforderlich.
+        </p>
+        <Placeholder>
+          <p>
+            Vom Betreiber zu bestätigen: Auftragsverarbeitungsvertrag mit Vercel Inc. (Art. 28 DSGVO) und die
+            Grundlage der Datenübermittlung in die USA (EU-US Data Privacy Framework / Standardvertragsklauseln).
+          </p>
+        </Placeholder>
 
         <h2 className="text-xl font-bold text-white mt-6">4. Schriftarten (lokal gehostet)</h2>
         <p>

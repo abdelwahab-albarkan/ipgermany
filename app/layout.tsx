@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Cairo, Tajawal } from 'next/font/google';
 import './globals.css';
+import { Analytics } from '@vercel/analytics/next';
 import LayoutWrapper from '@/components/common/LayoutWrapper';
 import JsonLd from '@/components/common/JsonLd';
 import { organizationSchema, websiteSchema } from '@/lib/structured-data';
@@ -100,6 +101,8 @@ export default function RootLayout({
         <LayoutWrapper>
           {children}
         </LayoutWrapper>
+        {/* Vercel Web Analytics — cookieless, no persistent identifiers */}
+        <Analytics />
       </body>
     </html>
   );

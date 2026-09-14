@@ -6,6 +6,7 @@ import Footer from '../layout/Footer';
 import PageTransition from '../ui/PageTransition';
 import WhatsAppButton from './WhatsAppButton';
 import MouseGlow from '../ui/MouseGlow';
+import CookieConsent from './CookieConsent';
 
 interface LayoutWrapperProps {
   children: React.ReactNode;
@@ -30,6 +31,7 @@ export default function LayoutWrapper({ children }: LayoutWrapperProps) {
       <Footer />
       <WhatsAppButton />
       <MouseGlow />
+      <CookieConsent />
     </div>
   );
 }

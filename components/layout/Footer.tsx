@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Logo from './Logo';
+import CookieSettingsButton from '@/components/common/CookieSettingsButton';
 import { SITE_CONFIG, SOCIAL_LINKS } from '@/lib/constants';
 import {
   Tv,
@@ -385,6 +386,8 @@ export default function Footer() {
           <Link href="/refund" className="hover:text-white transition-colors">Erstattung</Link>
           <span className="text-gray-700">&bull;</span>
           <Link href="/cookies" className="hover:text-white transition-colors">Cookies</Link>
+          <span className="text-gray-700">&bull;</span>
+          <CookieSettingsButton />
         </div>
       </div>
     </footer>
